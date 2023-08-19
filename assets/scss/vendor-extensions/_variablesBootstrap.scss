@@ -298,13 +298,14 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #030303;  //$blue !default; setting
+$secondary:     #FBFF22;  //$gray-600 !default;  setting
+$thirdary:      #C96464;  // setting
 $success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$info:          #EBEAE8;//$cyan !default;  setting
+$warning:       #9C9E18;//$yellow !default;  setting
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #F3F1E5;//$gray-100 !default; setting
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -312,6 +313,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "thirdary":   $thirdary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -335,7 +337,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false; //true !default;  setting
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -345,7 +347,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false; //true !default;   setting
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -372,13 +374,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+// 0/4/8/16/24/48          old   setting
+// 0/4/8/12/16/24/32/48/60   new setting
 $spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  0: 0,              // 0px
+  1: $spacer * .25,  // 4px
+  2: $spacer * .5,   // 8px
+  3: $spacer * .75,  // 12px
+  4: $spacer,        // 16px
+  5: $spacer * 1.5,  // 24px
+  6: $spacer * 2,    // 32px
+  7: $spacer * 3,    // 48px
+  8: $spacer * 3.75, // 60px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -398,7 +405,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #F3F1E5;//$white !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -571,7 +578,9 @@ $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 1.125 !default;  // setting
+$h7-font-size:                $font-size-base !default;          // setting
+$h8-font-size:                $font-size-base * 0.875 !default;          // setting
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -581,7 +590,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size, // setting
+  7: $h7-font-size, // setting
+  8: $h8-font-size  // setting
 ) !default;
 // scss-docs-end font-sizes
 

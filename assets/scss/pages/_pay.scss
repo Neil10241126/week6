@@ -1,0 +1,13 @@
+// pay
+.pay {
+  &-text {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  @include pad {
+    &-text {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

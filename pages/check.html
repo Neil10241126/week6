@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單確認</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="check pt-2 pt-lg-5 mb-7 mb-lg-8">
+      <div class="container">
+        <div class="row justify-content-center align-items-center flex-column">
+          <div class="col-12 col-lg-6">
+            <div class="progress d-flex justify-content-between position-relative mb-5 mb-lg-7">
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary d-inline-block mb-2 py-3 px-5">1</span>
+                <p class="fw-bold font-NotoSerifTC">訂單確認</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-primary bg-light border border-primary d-inline-block mb-2 py-3 px-5">2</span>
+                <p class="fw-bold font-NotoSerifTC">結帳付款</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-primary bg-light border border-primary d-inline-block mb-2 py-3 px-5">3</span>
+                <p class="fw-bold font-NotoSerifTC">訂購結果</p>
+              </div>
+              <div class="progress-line position-absolute">
+                <div class="line-item"></div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="fs-1 fw-bold font-NotoSerifTC text-lg-center mb-4 mb-lg-6">返老還童-制服聯誼</h2>
+              <table class="table mb-6 mb-lg-7">
+                <thead>
+                  <tr class="border-bottom border-2 border-primary">
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">日期</th>
+                    <td class="text-end">2023/5/12</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">票種</th>
+                    <td class="text-end">改頭換面票（含大改造）</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">票價</th>
+                    <td class="text-end">$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/images/index/sparkler.png" width="31" alt="">
+                <h3 class="fs-4 lh-base fw-bold font-NotoSerifTC mt-4">聯絡人資料</h3>
+              </div>
+              <div class="mb-4">
+                <label for="name" class="form-label">聯絡人姓名</label>
+                <input type="text" class="form-control border border-2 border-primary" id="name" placeholder="請輸入聯絡人名稱">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control border border-2 border-primary" id="email" placeholder="請輸入Email">
+              </div>
+              <div class="mb-5 mb-lg-6">
+                <label for="tel" class="form-label">手機</label>
+                <input type="tel" class="form-control border border-2 border-primary" id="tel" placeholder="請輸入手機號碼">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="d-grid gap-2 mb-4">
+              <a href="pay.html" class="btn btn-primary fs-5 py-2">確認表單資料<i class="icofont-rounded-double-right ms-1"></i></a>
+            </div>
+            <a href="#" class="fs-6 font-NotoSerifTC text-center text-muted">取消購票</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

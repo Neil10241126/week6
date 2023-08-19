@@ -1,0 +1,61 @@
+// products
+.products {
+  &-header {
+    h2 {
+      font-size: 64px;
+      line-height: 74px;
+    }
+  }
+  .products-link--hover {
+    border-left: 4px solid $primary !important;
+    @include hover-transition {
+      background: $primary;
+      color: #FFFFFF;
+    }
+  }
+
+  .card-body {
+    img {
+      width: 100%;
+      height: 255px;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .card-text {
+      @include text-vertical-truncate
+    }
+  }
+  .card-footer {
+    a:hover {
+      @include hover-transition {
+        color: $warning;
+      }
+    }
+  }
+  .page-link {
+    @include hover-transition {
+      background: $primary !important;
+      color: $secondary !important;
+    }
+  }
+  @include pad {
+    .products-link--hover {
+      font-size: 14px;
+    }
+    &-header {
+      h2 {
+        font-size: 24px;
+        line-height: 27px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    h3 {
+      font-size: 32px !important;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}

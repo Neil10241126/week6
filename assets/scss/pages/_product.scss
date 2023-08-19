@@ -1,0 +1,79 @@
+// product
+.product {
+  &-header {
+    img {
+      height: 550px;
+      object-fit: cover;
+    }
+  }
+  .time-line {
+    width: 100px;
+    height: 2px;
+    background: #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transform: rotate(120deg);
+  }
+
+  &-content {
+    &-title {
+      font-size: 60px;
+      line-height: 86px;
+    }
+    &-text {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 64px;
+    }
+  }
+  &-link--hover {
+    border-left: 4px solid $primary !important;
+    @include hover-transition {
+      background: $primary;
+      color: #FFFFFF;
+    }
+  }
+  @include pad {
+    &-header {
+      img {
+        height: 180px;
+      }
+    }
+    .text-title {
+      font-size: 24px !important;
+      line-height: 28px;
+    }
+    .time-line {
+      width: 50px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .product-text {
+      font-size: 22px !important;
+      line-height: 25px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .text-time, span {
+      font-size: 16px !important;
+      line-height: 18px;
+    }
+    &-content {
+      &-title {
+        font-size: 32px;
+        line-height: 46px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      table {
+        font-size: 14px;
+      }
+    }
+  }
+}

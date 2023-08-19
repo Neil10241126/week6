@@ -1,3 +1,200 @@
-.index-title {
-  font-size: 100px;
+// banner 
+.banner {
+  img {
+    max-height: 518px;
+  }
+  h2 {
+    color: #FFF;
+    font-size: 60px;
+    top: 48px;
+    left: 48px;
+  }
+  .carousel-caption {
+    right: 17.5%;
+    left: 17.5%;
+  }
+  @include pad {
+    h2 {
+      font-size: 32px !important;
+      top: 16px;
+      left: 40px;
+    }
+    h5 {
+      font-size: 18px !important;
+    }
+  }
 }
+
+// navigation 
+.navigation {
+  a {
+    &:nth-last-child(1) {
+      @include hover-transition {
+        background: $secondary !important;
+        h2 {
+          color: $primary !important;
+        }
+      }
+    }
+    &:nth-child(-n+5) {
+      padding-top: 33px;
+      padding-bottom: 33px;
+      p {
+        line-height: 34px;
+      }
+      @include hover-transition {
+        background: $secondary;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  @include pad {
+    a:nth-child(-n+5) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      img {
+        width: 40px;
+      }
+      p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+    }
+    h2 {
+      font-size: 24px !important;
+      line-height: 34px;
+    }
+  }
+}
+
+// recent 
+.recent {
+  &-header {
+    h2 {
+      font-size: 64px;
+      line-height: 74px;
+    }
+  }
+  .card-body {
+    img {
+      width: 100%;
+      height: 255px;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .card-text {
+      @include text-vertical-truncate
+    }
+  }
+  .card-footer {
+    a:hover {
+      @include hover-transition {
+        color: $warning;
+      }
+    }
+  }
+  @include pad {
+    &-header {
+      h2 {
+        font-size: 24px;
+        line-height: 27px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    h3 {
+      font-size: 32px !important;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+// online
+.online {
+  &-header {
+    h2 {
+      font-size: 64px;
+      line-height: 74px;
+    }
+  }
+  .online-link--hover {
+    border-left: 4px solid $primary !important;
+    @include hover-transition {
+      background: $primary;
+      color: #FFFFFF;
+    }
+  }
+  @include pad {
+    &-header {
+      h2 {
+        font-size: 24px;
+        line-height: 27px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    h3 {
+      font-size: 18px !important;
+    }
+    .online-link--hover {
+      font-size: 14px !important;
+    }
+    button {
+      font-size: 16px !important;
+    }
+  }
+}
+
+// activity 
+.activity {
+  .card-img {
+    height: 274px;
+  }
+  .card-title {
+    background: #FFFFFF;
+    padding: 9px 16px;
+    transform: rotate(356deg);
+  }
+  li:nth-child(3) {
+    transform: rotate(358deg);
+  }
+  li:nth-child(even) {
+    transform: rotate(2deg);
+  }
+  @include pad {
+    marquee {
+      font-size: 16px !important;
+    }
+  }
+}
+
+// contact
+.contact {
+  @include mobile {
+    &-sub {
+      border-left: 2px solid $primary !important;
+    }
+    h3 {
+      font-size: 24px !important;
+    }
+    button {
+      font-size: 16px !important;
+    }
+  }
+}
+
+// dream
+.dream {
+  @include pad {
+   h3 {
+     font-size: 18px !important;
+   }
+   p {
+     font-size: 14px !important;
+   }
+  }
+ }

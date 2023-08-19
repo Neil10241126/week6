@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>結帳付款</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="check pt-2 pt-lg-5 mb-7 mb-lg-8">
+      <div class="container">
+        <div class="row justify-content-center align-items-center flex-column">
+          <div class="col-12 col-lg-6">
+            <div class="progress d-flex justify-content-between position-relative mb-5 mb-lg-7">
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary border border-primary d-inline-block mb-2 py-3 px-3 px-lg-4"><i class="icofont-verification-check px-1"></i></span>
+                <p class="fw-bold font-NotoSerifTC">訂單確認</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary d-inline-block mb-2 py-3 px-5">2</span>
+                <p class="fw-bold font-NotoSerifTC">結帳付款</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-primary bg-light border border-primary d-inline-block mb-2 py-3 px-5">3</span>
+                <p class="fw-bold font-NotoSerifTC">訂購結果</p>
+              </div>
+              <div class="progress-line position-absolute">
+                <div class="line-item"></div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="fs-1 fw-bold font-NotoSerifTC text-lg-center mb-4">返老還童-制服聯誼</h2>
+              <marquee scrollamount="5" class="pay-text font-NotoSerifTC text-secondary bg-primary text-center py-2 px-lg-3 mb-4 mb-lg-5">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</marquee>
+              <table class="table mb-6 mb-lg-7">
+                <thead>
+                  <tr class="border-bottom border-2 border-primary">
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">訂單編號</th>
+                    <td class="text-end">892746123</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">票券</th>
+                    <td class="text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/images/index/sparkler.png" width="31" alt="">
+                <h2 class="fs-4 lh-base fw-bold font-NotoSerifTC mt-4">結帳資訊</h2>
+              </div>
+              <div class="mb-4">
+                <label for="tickit" class="form-label">取票資訊</label>
+                <input type="text" class="form-control border border-2 border-primary mb-1" id="tickit" placeholder="請輸入身分證字號或護照號碼">
+                <p>請輸入您的 <span class="text-thirdary">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-thirdary">護照號碼</span></p>
+              </div>
+              <div class="mb-5 mb-lg-6">
+                <p class="mb-2">付款方式</p>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    信用卡
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    ATM虛擬帳號
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="d-grid gap-2 mb-4">
+              <a href="order.html" class="btn btn-primary fs-5 py-2">確認訂單並繳費 $8000<i class="icofont-rounded-double-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

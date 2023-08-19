@@ -1,0 +1,12 @@
+// 字形變數
+$font-family-type: (
+  YesevaOne: 'Yeseva One',       // 主標題
+  NotoSerifTC: 'Noto Serif TC',  // 小標題
+  NotoSansTC: 'Noto Sans TC',    // 內文
+);
+
+@each $name, $type in $font-family-type {
+  .font-#{$name} {
+    font-family: $type;
+  }
+}

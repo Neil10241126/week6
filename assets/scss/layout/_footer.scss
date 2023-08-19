@@ -1,4 +1,8 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+// footer
+.footer {
+ @include pad {
+  p {
+    font-size: 14px !important;
+  }
+ }
 }

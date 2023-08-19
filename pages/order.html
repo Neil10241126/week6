@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂購結果</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="order pt-2 pt-lg-5 mb-7 mb-lg-8">
+      <div class="container">
+        <div class="row justify-content-center align-items-center flex-column">
+          <div class="col-12 col-lg-6">
+            <div class="progress d-flex justify-content-between position-relative mb-5 mb-lg-7">
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary border border-primary d-inline-block mb-2 py-3 px-3 px-lg-4"><i class="icofont-verification-check px-1"></i></span>
+                <p class="fw-bold font-NotoSerifTC">訂單確認</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary border border-primary d-inline-block mb-2 py-3 px-3 px-lg-4"><i class="icofont-verification-check px-1"></i></span>
+                <p class="fw-bold font-NotoSerifTC">結帳付款</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary d-inline-block mb-2 py-3 px-5">3</span>
+                <p class="fw-bold font-NotoSerifTC">訂購結果</p>
+              </div>
+              <div class="progress-line position-absolute">
+                <div class="line-item"></div>
+              </div>
+            </div>
+
+            <div>
+              <i class="icofont-check-circled d-block text-center fs-1 mb-3"></i>
+              <h2 class="fs-2 fw-bold font-NotoSerifTC text-center mb-5">訂購成功</h2>
+              <table class="table mb-4">
+                <thead>
+                  <tr class="border-bottom border-2 border-primary">
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">訂單編號</th>
+                    <td class="text-end">892746123</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">訂購時間</th>
+                    <td class="text-end">2023/04/28 14:30</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">票券</th>
+                    <td class="text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">取票序號</th>
+                    <td class="text-end text-thirdary fw-bold">95G54J4434</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">取票號碼</th>
+                    <td class="text-end text-thirdary fw-bold">04597101</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-muted">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。
+                <br>若您未前往取票，本筆交易仍視為完成，不可取消訂單。
+                <br>若需退票，請按照退票辦法進行申請。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

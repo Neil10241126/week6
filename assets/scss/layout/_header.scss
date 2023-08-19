@@ -1,4 +1,34 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// header
+.header {
+  .logo {
+    background-image: url(../images/layout/logo.png);
+    background-size: cover;
+    width: 53px;
+    height: 53px;
+    @include hide-text
+  }
+  .input-group--hover:hover {
+    background: $secondary;
+    i {
+      color: $primary !important;
+    }
+  }
+  .nav-item--hover {
+    @include hover-transition {
+      transform: translateY(-5px);
+      color: $warning;
+    }
+  }
+  @include pad {
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+    .input-group {
+      max-width: 200px;
+    }
+    .icofont-search-1 {
+      font-size: 15px !important;
+    }
+  }
 }
