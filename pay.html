@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>結帳付款</title>
+    <script type="module" crossorigin src="/week6/assets/main-64e21e0c.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-db0c2ac7.css">
+  </head>
+  <body>
+    <header class="header border-bottom border-primary border-3 mb-4 mb-lg-6">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-4">
+      <div class="container-fluid px-0">
+        <div class="d-flex align-items-center">
+          <h1><a href="index.html" class="logo">logo</a></h1>
+          <p class="fs-2 font-YesevaOne ms-3 me-1 d-none d-lg-block">7TAO</p>
+          <p class="fs-6 fw-bold font-NotoSerifTC text-nowrap me-5 d-none d-lg-block">活動訂票網</p>
+          <form class="input-group d-flex ps-4 ps-lg-0">
+            <input class="form-control lh-1 border border-end-0 border-primary border-2 py-2 py-lg-3 ps-lg-4" type="search" placeholder="探索活動" aria-label="Search">
+            <button class="input-group--hover btn btn-primary border border-primary border-2 p-lg-3" type="submit"><i class="icofont-search-1 fs-5 text-secondary"></i></button>
+          </form>
+        </div>
+        <button class="navbar-toggler border border-2 border-primary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-4 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-item--hover fs-6 lh-sm font-YesevaOne py-2 px-3" aria-current="page" href="check.html"><i class="icofont-ui-file me-2 me-lg-1"></i>REGISTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item--hover fs-6 lh-sm font-YesevaOne py-2 px-3" href="login.html"><i class="icofont-ui-user me-2 me-lg-1"></i>LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>    
+    <div class="check pt-2 pt-lg-5 mb-7 mb-lg-8">
+      <div class="container">
+        <div class="row justify-content-center align-items-center flex-column">
+          <div class="col-12 col-lg-6">
+            <div class="progress d-flex justify-content-between position-relative mb-5 mb-lg-7">
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary border border-primary d-inline-block mb-2 py-3 px-3 px-lg-4"><i class="icofont-verification-check px-1"></i></span>
+                <p class="fw-bold font-NotoSerifTC">訂單確認</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-secondary bg-primary d-inline-block mb-2 py-3 px-5">2</span>
+                <p class="fw-bold font-NotoSerifTC">結帳付款</p>
+              </div>
+              <div class="text-center">
+                <span class="progress-stage fs-5 fw-bold font-NotoSerifTC text-primary bg-light border border-primary d-inline-block mb-2 py-3 px-5">3</span>
+                <p class="fw-bold font-NotoSerifTC">訂購結果</p>
+              </div>
+              <div class="progress-line position-absolute">
+                <div class="line-item"></div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="fs-1 fw-bold font-NotoSerifTC text-lg-center mb-4">返老還童-制服聯誼</h2>
+              <marquee scrollamount="5" class="pay-text font-NotoSerifTC text-secondary bg-primary text-center py-2 px-lg-3 mb-4 mb-lg-5">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</marquee>
+              <table class="table mb-6 mb-lg-7">
+                <thead>
+                  <tr class="border-bottom border-2 border-primary">
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">訂單編號</th>
+                    <td class="text-end">892746123</td>
+                  </tr>
+                  <tr class="border-bottom border-primary">
+                    <th scope="row" class="font-NotoSerifTC">票券</th>
+                    <td class="text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex flex-column align-items-center mb-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" width="31" alt="">
+                <h2 class="fs-4 lh-base fw-bold font-NotoSerifTC mt-4">結帳資訊</h2>
+              </div>
+              <div class="mb-4">
+                <label for="tickit" class="form-label">取票資訊</label>
+                <input type="text" class="form-control border border-2 border-primary mb-1" id="tickit" placeholder="請輸入身分證字號或護照號碼">
+                <p>請輸入您的 <span class="text-thirdary">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-thirdary">護照號碼</span></p>
+              </div>
+              <div class="mb-5 mb-lg-6">
+                <p class="mb-2">付款方式</p>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    信用卡
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    ATM虛擬帳號
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="d-grid gap-2 mb-4">
+              <a href="order.html" class="btn btn-primary fs-5 py-2">確認訂單並繳費 $8000<i class="icofont-rounded-double-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <p class="text-center border-top border-3 border-primary py-5 py-lg-6">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+    
+  </body>
+</html>
